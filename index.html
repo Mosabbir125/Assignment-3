@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 3</title>
+
+    <!-- font-awsome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+     <!-- daisyUI CDN -->
+     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+     <script src="https://cdn.tailwindcss.com"></script>
+     <script>
+         tailwind.config = {
+           theme: {
+             extend: {
+               colors: {
+                 clifford: '#da373d',
+                'button-primary': '#ABEF5F',
+                'menu-color': '#737373',
+                'icon-color': '#737373',
+                'button2-color': '#ABEF5F80',
+               }
+             }
+           }
+         }
+       </script>
+
+</head>
+<body class="m-0 p-0 h-full w-full overflow-x-hidden">
+    <header class="bg-[#F6F6F6] pb-4 w-full overflow-x-hidden">
+        <!-- header top -->
+        <div class="w-4/5 mx-auto">
+            <div class="navbar">
+                <div class="navbar-start">
+                  <a class=" text-xl font-bold	"><i class="fa fa-arrow-right -rotate-45 rounded-full bg-yellow-300 p-2 mx-2" aria-hidden="true"></i>Rinterio</a>
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                  <ul class="menu menu-horizontal px-1">
+                      <li class="menu-color"><a>Home</a></li>
+                      <li class="menu-color"><a>Services</a></li>
+                      <li class="menu-color"><a>Portfolio</a></li>
+                      <li class="menu-color"><a>Blogs</a></li>
+                      <li class="menu-color"><a>Contact Us</a></li>
+                  </ul>
+                </div>
+                <div class="navbar-end">
+                  <i class="fa fa-search p-2  rounded-full bg-white mx-1 hidden lg:flex" aria-hidden="true"></i>
+                  <i class="fa fa-shopping-cart p-2 rounded-full bg-white mx-1 hidden lg:flex" aria-hidden="true"></i>
+                  <a class="btn bg-button-primary hidden lg:flex mx-2">Book Consult<i class="fa fa-arrow-right -rotate-45 rounded-full bg-black p-2 text-white" aria-hidden="true"></i></a>
+                  <div class="dropdown">
+                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="h-5 w-5"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                          d="M4 6h16M4 12h8m-8 6h16" />
+                      </svg>
+                    </div>
+                    <ul
+                      tabindex="0"
+                      class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+                      <li class="menu-color"><a>Home</a></li>
+                      <li class="menu-color"><a>Services</a></li>
+                      <li class="menu-color"><a>Portfolio</a></li>
+                      <li class="menu-color"><a>Blogs</a></li>
+                      <li class="menu-color"><a>Contact Us</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+        </div>
+
+        <!-- header bottom -->
+         <div>
+          <div class="lg:w-4/5 w-full mx-auto">
+            <div class="hero-content text-center">
+              <div class="lg:w-4/5 w-full mx-auto items-center">
+                <img class="mx-auto" src="assets/banner.png" alt="no img found">
+                <h1 class="text-5xl font-bold text-[#212121] w-full">A barn house of this design has a striking appearance</h1>
+                <p class="py-6 text-[#494949] text-base">
+                  When you picture a barn house, what comes to mind? It's most likely a red, wooden building with a gambrel roof, the type you'd expect to see in a Norman Rockwell painting.
+                </p>
+                <button class="btn bg-button2-color  w-full lg:w-auto text-[#212121]  rounded-full font-bold text-xl">View Details<i class="fa fa-arrow-right -rotate-45 rounded-full bg-yellow-300 p-2 text-black" aria-hidden="true"></i></button>
+              </div>
+            </div>
+          </div>
+         </div>
+    </header>
+    <main>
+      <!-- main part 1 -->
+      <div class="flex flex-col lg:flex-row p-12 lg:p-24 bg-[#F4F4F4] w-full overflow-x-hidden">
+        <!-- text-content -->
+        <div class="flex-1">
+          <img class="invisible lg:visible" src="assets/Vector.png" alt="no img found">
+          <div class="text-center lg:text-start">
+            <button class="bg-white rounded-2xl p-2 lg:ml-10 mt-3 font-bold"><i class="fa fa-arrow-right" aria-hidden="true"></i> About Us</button>
+          </div>
+          <h1 class="text-4xl font-bold text-[#212121] lg:w-8/12 lg:ml-10 mt-3 text-center mx-auto lg:text-left w-full">We design thoughtful, liveable spaces</h1>
+          <p class="py-3 text-[#494949] text-base text-center lg:ml-10 mt-3 lg:w-10/12 lg:text-left w-full">We specialize in Unique and Inspiring interiors for boutique holiday home letting . We deliver owners a stunning wall to wall service supplying everything from</p>
+           <!-- card 1 -->
+            <div class="flex lg:ml-10 p-3  lg:w-10/12 bg-white rounded-xl pl-6 mx-auto w-full">
+              <div class="lg:my-auto my-0">
+                <img src="assets/commercial.png" alt="no img found">
+             </div>
+             <div class="px-5">
+               <h3 class="font-bold text-[#212121] text-xl">Commercial</h3>
+               <p class="w-5/6 text-base text-[#737373]">Commercial means involving or relating to the buying and selling of goods.</p>
+             </div>
+            </div>
+           <!-- card 2 -->
+            <div class="flex lg:ml-10 p-3  lg:w-10/12 bg-white rounded-xl pl-6 my-2 mx-auto w-full">
+              <div class="lg:my-auto my-0">
+                <img src="assets/residential.png" alt="no img found">
+             </div>
+             <div class="px-5">
+               <h3 class="font-bold text-[#212121] text-xl">Residential</h3>
+               <p class="w-5/6 text-base text-[#737373]">A residential road, area, etc. has only private houses, not offices and factories. </p>
+             </div>
+            </div>
+        </div>
+         <!-- image-content -->
+          <div class="flex-1">
+            <img src="assets/Rectangle.png" class="lg:w-[470px] w-full mx-auto mt-14 lg:mx-0" />
+          </div>
+      </div>
+
+      <!-- main part 2 -->
+      <div class="bg-[#F4F4F4]">
+        <div class="hero py-6">
+          <div class="hero-content text-center">
+            <div class="w-3/4">
+              <button class="bg-white rounded-2xl p-2 my-6 font-bold"><i class="fa fa-arrow-right" aria-hidden="true"></i> How we works</button>
+              <h1 class="text-5xl font-bold">Our Works Process</h1>
+              <p class="py-6">
+                Work process refers to regulations and methods to carry out work according to a certain standard and sequence.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="grid grid-cols-1 lg:grid-cols-4  md:grid-cols-2 gap-5  mx-auto w-3/4 pb-10">
+           <!-- WP card 1 -->
+            <div class="bg-[#E7C1D3]  p-6 rounded-xl">
+              <img src="assets/concept.png" alt="no img found">
+              <h3 class="text-xl font-bold py-1">Concept</h3>
+              <p class="text-base text-[#494949]">An example of a concept is a bright flower. This is a rather specific concept,</p>
+            </div>
+           <!-- WP card 2 -->
+            <div class="bg-[#EFDA6E]  p-6 rounded-xl">
+              <img src="assets/flow-chart.png" alt="no img found">
+              <h3 class="text-xl font-bold py-1">Design Process</h3>
+              <p class="text-base text-[#494949]">Design process steps. The five main steps in the design process </p>
+            </div>
+           <!-- WP card 3 -->
+            <div class="bg-[#A4DAC3] p-6 rounded-xl">
+              <img src="assets/vision.png" alt="no img found">
+              <h3 class="text-xl font-bold py-1">Supervision</h3>
+              <p class="text-base text-[#494949]">Supervision is the act or function of overseeing something or somebody</p>
+            </div>
+           <!-- WP card 4 -->
+            <div class="bg-[#77AAEA]  p-6 rounded-xl">
+              <img src="assets/budget-planning.png" alt="no img found">
+              <h3 class="text-xl font-bold py-1">Budget Planning</h3>
+              <p class="text-base text-[#494949]">A budget is a guide that keeps you on the path to reach your financial goals</p>
+            </div>
+           
+        </div>
+      </div>
+
+      <!-- Main part 3 -->
+      <div class="mb-[100px]">
+        <div class="hero py-6">
+          <div class="hero-content text-center">
+            <div class="w-3/4">
+              <button class="bg-[#EEFCDF] rounded-2xl p-2 my-6 font-bold"><i class="fa fa-arrow-right" aria-hidden="true"></i> Explore our Latest works</button>
+              <h1 class="text-5xl font-bold">Our Latest Portfolio</h1>
+              <p class="py-6">
+                A portfolio website is a curated, online space that showcases your best work. It's one of the most practical and memorable</p>
+            </div>
+          </div>
+        </div>
+        <!-- image card sections-->
+        <div>
+          <!-- Image Section -->
+          <div class="grid grid-cols-1 lg:grid-cols-4 grid-rows-2 gap-4 lg:w-3/4    mx-auto">
+              <div class="h-38 border rounded-xl col-span-3">
+                <div class="hero">
+                  <div class="hero-content flex-col lg:flex-row">
+                     <img src="assets/img1.png" class="lg:max-w-sm w-full rounded-lg h-[196px]" />
+                    <div>
+                      <h1 class="text-2xl font-bold">Commercial</h1>
+                      <p class="py-6 text-base text-[#737373]">
+                      Commercial means involving or relating to the buying and selling of goods.Docklands in its heyday was a major centre
+                      </p>
+                      <a class=" text-xl font-bold">View Details<i class="fa fa-arrow-right -rotate-45 rounded-full bg-yellow-300 p-2 mx-2" aria-hidden="true"></i></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="border rounded-xl">
+                <img class="mx-auto h-[190px] w-[200px] my-4" src="assets/img2.png" alt="no img found" />
+              </div>
+              <div class="border rounded-xl -pb-8">
+                <img class="mx-auto my-4 h-[190px] w-[200px]" src="assets/img3.png" alt="no img found" />
+              </div>
+              <div class="h-38 border rounded-xl col-span-2">
+                <div class="hero">
+                  <div class="hero-content flex-col lg:flex-row">
+                    <img src="assets/img1.png" class="lg:max-w-sm w-full rounded-lg" />
+                    <div>
+                      <h1 class="text-2xl font-bold">Commercial</h1>
+                      <p class="py-3 text-base text-[#737373]">
+                      Commercial means involving or relating to the buying and selling of goods.
+                      </p>
+                      <a class=" text-xl font-bold">View Details<i class="fa fa-arrow-right -rotate-45 rounded-full bg-yellow-300 p-2 mx-2" aria-hidden="true"></i></a>
+                    </div>
+                </div>
+              </div>
+            </div>
+              <div
+                class="h-38 border rounded-xl"
+              >
+              <img class="mx-auto h-[190px] w-[200px] my-4" src="assets/img5.png" alt="no img found" />
+            </div>
+         </div>
+        </div>
+      </div>
+      <!-- Main part 4 -->
+      <div class="bg-[#EFEEEF]">
+        <div class="hero py-6">
+          <div class="hero-content text-center">
+            <div class="lg:w-3/4 w-full">
+              <button class="bg-[#DBE8CC] rounded-2xl p-2 my-6 font-bold text-[#494949]"><i class="fa fa-arrow-right" aria-hidden="true"></i> Let’s Connect</button>
+              <h1 class="text-5xl font-bold text-[#212121]">Let’s Discuss Next Project</h1>
+              <p class="py-6 text-base text-[#494949]">
+                Let’s start with a discussion. We’re at the forefront of marketing’s evolution and eager to bring your business to new heights with innovative design</p>
+            </div>
+          </div>
+        </div>
+        <!-- input field section -->  
+        <section class="flex items-center justify-center ">
+          <div class=" p-8 rounded-lg  w-full lg:w-3/4 text-center"
+              <form>
+                  <div class="lg:flex gap-6 mb-2">
+                      <input 
+                          type="text" 
+                          placeholder="First Name*" 
+                          class="w-full p-3 my-2 border border-gray-300 rounded-2xl focus:outline-none focus:ring-2 focus:ring-blue-500"
+                      />
+                      <input 
+                          type="text" 
+                          placeholder="Last Name*" 
+                          class="w-full p-3 my-2 border border-gray-300 rounded-2xl focus:outline-none focus:ring-2 focus:ring-blue-500"
+                      />
+                  </div>
+                  <div class="lg:flex gap-6 mb-2">
+                      <input 
+                          type="email" 
+                          placeholder="Phone Number*" 
+                          class="w-full p-3 my-2 border border-gray-300 rounded-2xl focus:outline-none focus:ring-2 focus:ring-blue-500"
+                      />
+                      <input 
+                          type="email" 
+                          placeholder="Email Number*" 
+                          class="w-full p-3 my-2 border border-gray-300 rounded-2xl focus:outline-none focus:ring-2 focus:ring-blue-500"
+                      />
+                  </div>
+                  <div class="mb-4">
+                      <textarea 
+                          placeholder="Write your message here" 
+                          class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 h-32"
+                      ></textarea>
+                  </div>
+                  <button 
+                      type="submit" 
+                      class="w-full bg-[#ABEF5F] text-[#1C1C1C] p-3 rounded-lg hover:bg-blue-600 transition-colors duration-300 font-bold">
+                      Send Mail <i class="fa fa-arrow-right -rotate-45 rounded-full bg-[#1C1C1C] p-2 text-white" aria-hidden="true"></i>
+                  </button>
+              </form>
+           </div>
+        </section>
+      </div>
+    </main>
+    <footer>
+      <div class="bg-[#1C1C1C]">
+        <div class="hero ">
+          <div class="hero-content text-center">
+            <div class="lg:w-3/4 w-full">
+              <div class="navbar-center">
+                <a class=" text-xl font-bold	text-[#E9E9E9]"><i class="fa fa-arrow-right -rotate-45 rounded-full bg-yellow-300 p-2 mx-2 text-black" aria-hidden="true"></i>Rinterio</a>
+              </div>
+              <p class="py-6 text-base text-[#737373]">
+                It seems like you're referring to something called "Rinterio." Could you please provide more context or clarify </p>
+            </div>
+          </div>
+        </div>
+        <div class="flex justify-center items-center text-center">
+          <ul class="lg:flex">
+              <li class="menu-color text-[#E9E9E9] text-base px-6 py-3"><a>Home</a></li>
+              <li class="menu-color text-[#E9E9E9] text-base px-6 py-3"><a>Services</a></li>
+              <li class="menu-color text-[#E9E9E9] text-base px-6 py-3"><a>Portfolio</a></li>
+              <li class="menu-color text-[#E9E9E9] text-base px-6 py-3"><a>Blogs</a></li>
+              <li class="menu-color text-[#E9E9E9] text-base px-6 py-3"><a>Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="text-center">
+          <button class="w-4/5 lg:w-auto bg-[#ABEF5F] rounded-3xl p-2 my-6 font-bold text-[#1C1C1C]text-xl"> Book Consult <i class="fa fa-arrow-right -rotate-45 rounded-full bg-[#1C1C1C] p-2 mx-2 text-white" aria-hidden="true"></i></button>
+        </div>
+      </div>  
+    </footer>
+</body>
+</html>
